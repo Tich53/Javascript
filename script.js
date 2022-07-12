@@ -22,9 +22,13 @@ console.log(bernardHigherIMC);
 
 // Exercice 3
 
-const weight = prompt("Quel est ton poids ?");
-const height = prompt("Quel est ta taille ?");
+let weight = prompt("Quel est ton poids ?");
+weight = parseFloat(weight);
+let height = prompt("Quel est ta taille ?");
+height = parseFloat(height);
 const imc = weight / (height * height);
+console.log(height);
+console.log(weight);
 console.log(`Ton IMC est de ${imc.toFixed(2)}`);
 
 if (imc < 20) {
